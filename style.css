@@ -1,0 +1,502 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #f1f1f1;
+}
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+/********************************************************************
+************************     HEADER     *****************************
+********************************************************************/
+
+header {
+  background: url("Assets/Img/bg-1.JPG") fixed center/cover no-repeat;
+  margin: auto;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-titre {
+  display: block;
+  text-align: center;
+}
+.header-titre h1 {
+  font-size: 4rem;
+  margin: 50px auto;
+  letter-spacing: 10px;
+}
+.trait {
+  border: 1px solid white;
+  background: white;
+  width: 80px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+.header-titre h2 {
+  /* font-weight: lighter; */
+  margin: 50px auto;
+  letter-spacing: 5px;
+}
+
+/********************************************************************
+************************     BODY     *******************************
+********************************************************************/
+
+.background {
+  background: #f1f1f1;
+  color: #706f6f;
+}
+.propos-titre {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+.trait-2 {
+  border: 1px solid #706f6f;
+  background: #706f6f;
+  width: 80px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+.p-propos {
+  text-align: center;
+  margin: 40px 20%;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+#cv {
+  text-decoration: none;
+  color: #545454;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+}
+#cv div {
+  display: flex;
+  align-items: center;
+}
+#cv h2 {
+  padding: 15px 20px;
+  letter-spacing: 2px;
+  margin-bottom: 80px;
+  border: 3px solid #706f6f;
+  border-radius: 22px;
+  font-weight: 500;
+}
+#cv h2:hover {
+  color: rgba(102, 102, 102, 0.377);
+  background: #706f6f;
+  color: #f1f1f1;
+}
+.picto {
+  height: 75px;
+  font-size: 20px;
+}
+
+/********************************************************************
+************************     BLOC BARRE     *************************
+********************************************************************/
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bloc-propos {
+  min-height: 300px;
+  width: 60%;
+  background: #706f6f;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 50px;
+}
+#titre-bloc-barre {
+  text-align: center;
+}
+
+.logo-text {
+  display: flex;
+  margin-left: 10%;
+  align-items: center;
+}
+.logo-text-js {
+  display: flex;
+  margin-left: 6%;
+  align-items: center;
+}
+
+.skill-name {
+  margin-left: 10px;
+}
+.skill-name-js {
+  margin-left: -10px;
+}
+/*********************************************************************
+ ****************************  SKILL BAR  *****************************
+ *********************************************************************/
+
+.grid-skill {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 30px;
+}
+.skill-bar {
+  height: 8px;
+  border-radius: 5px;
+  background: grey;
+  width: 80%;
+  margin: 20px auto;
+}
+#skill-per-1 {
+  height: 8px;
+  border-radius: 5px;
+  background: rgb(241, 241, 241);
+  width: 70%;
+  margin: 0;
+}
+
+#skill-per-2 {
+  height: 8px;
+  border-radius: 5px;
+  background: rgb(241, 241, 241);
+  width: 60%;
+  margin: 0;
+}
+
+#skill-per-3 {
+  height: 8px;
+  border-radius: 5px;
+  background: rgb(241, 241, 241);
+  width: 20%;
+  margin: 0;
+}
+
+#skill-per-4 {
+  height: 8px;
+  border-radius: 5px;
+  background: rgb(241, 241, 241);
+  width: 10%;
+  margin: 0;
+}
+
+/*********************************************************************
+ ****************************  PORTFOLIO  ****************************
+ *********************************************************************/
+.portfolio h2 {
+  letter-spacing: 2px;
+}
+.portfolio {
+  margin: 50px auto;
+}
+.grid,
+.grid-3 {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: #706f6fde;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+.mockup-1,
+.mockup-2,
+.mockup-3,
+.mockup-4,
+.mockup-5,
+.mockup-6 {
+  overflow: hidden;
+  width: 100%;
+  border: 3px solid white;
+  border-radius: 20px;
+  height: 500px;
+}
+
+.mockup-1:hover .text-container,
+.mockup-2:hover .text-container,
+.mockup-3:hover .text-container,
+.mockup-4:hover .text-container,
+.mockup-5:hover .text-container,
+.mockup-6:hover .text-container {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mockup-1 {
+  background: url(./Assets/Img/montagne1.jpg) center/cover;
+}
+.mockup-1 p {
+  text-align: center;
+  margin: 0;
+  font-size: 1.2rem;
+  width: 50%;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+
+.mockup-2 {
+  background: url(./Assets/Img/gaming-campus.jpg) center/cover;
+}
+.mockup-2 p {
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
+  width: 70%;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+
+.mockup-3 {
+  background: url(./Assets/Img/magic-circles.jpg) center/cover;
+}
+.mockup-3 p {
+  text-align: center;
+  margin: 0;
+  font-size: 1.2rem;
+  width: 70%;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+.mockup-4 {
+  background: url(./Assets/Img/resto.jpg) center/cover;
+}
+.mockup-4 p {
+  text-align: center;
+  margin: 0;
+  font-size: 1.2rem;
+  width: 50%;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+.mockup-5 {
+  background: url(./Assets/Img/quote.jpg) center/cover;
+}
+.mockup-5 p {
+  text-align: center;
+  margin: 0;
+  font-size: 1.2rem;
+  width: 50%;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+.mockup-6 {
+  background: url(./Assets/Img/cookbook.jpg) center/cover;
+}
+.mockup-6 p {
+  text-align: center;
+  margin: 0;
+  font-size: 1.2rem;
+  width: 50%;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+
+/*********************************************************************
+ ****************************  FOOTER  *******************************
+ *********************************************************************/
+
+.footer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  color: #706f6f;
+  font-size: 1.2rem;
+}
+.contact {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.contact li a {
+  color: #706f6f;
+}
+.contact li a:hover {
+  color: rgba(102, 102, 102, 0.377);
+}
+.picto {
+  width: 100%;
+  height: 100%;
+}
+.picto ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  margin-right: 300px;
+}
+.picto li a {
+  color: #706f6f;
+  padding: 0 20px;
+  font-size: 2.2rem;
+}
+.picto li a:hover {
+  color: rgba(102, 102, 102, 0.377);
+}
+
+.trait-footer {
+  border-top: 1px solid #706f6f;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#copy {
+  text-align: center;
+  color: #706f6f;
+}
+/********************************************************************
+************************     TRANSITION     *************************
+********************************************************************/
+
+.reveal [class*="reveal-"] {
+  opacity: 0 !important;
+  transform: translateY(50px) !important;
+}
+
+[class*="reveal-"] {
+  transition: 3s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal-2 {
+  transition-delay: 0.4s;
+}
+
+.reveal-3 {
+  transition-delay: 0.5s;
+}
+
+/********************************************************************
+************************     RESPONSIVE     *************************
+********************************************************************/
+@media screen and (max-width: 850px) {
+  .grid,
+  .grid-2,
+  .grid-3 {
+    display: block;
+  }
+  .mockup-1 p,
+  .mockup-2 p,
+  .mockup-3 p,
+  .mockup-4 p,
+  .mockup-5 p,
+  .mockup-6 p {
+    font-size: 1.1rem;
+  }
+
+  .footer {
+    display: block;
+  }
+  .picto ul {
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+
+  .text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: #706f6fd8;
+    color: white;
+    visibility: hidden;
+    opacity: 1;
+    transition: 0.8s;
+  }
+  .contact ul {
+    padding: 0;
+    display: none;
+  }
+
+  #copy {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .p-propos {
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 550px) {
+  .grid-skill {
+    display: block;
+  }
+  #cv h2 {
+    font-size: 1rem;
+  }
+  .header-titre h2 {
+    font-size: 1.2rem;
+  }
+  .header-titre h1 {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  header {
+    background: url("Assets/Img/bg-1.JPG") center/cover no-repeat fixed;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mockup-1 p,
+  .mockup-2 p,
+  .mockup-3 p,
+  .mockup-4 p,
+  .mockup-5 p,
+  .mockup-6 p {
+    width: 80%;
+  }
+
+  #titre-bloc-bar h2 {
+    font-size: 1.2rem;
+  }
+  .mockup-1 {
+    background: url(./Assets/Img/montagne2.jpg) center/cover;
+  }
+}
+
+/*****************************************
+**************   REVEAL  ****************
+****************************************/
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal [class*="reveal-"] {
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
+  }
+  [class*="reveal-"] {
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
